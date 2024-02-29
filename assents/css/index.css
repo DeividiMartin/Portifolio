@@ -1,0 +1,108 @@
+body {
+    color: #d1d1d1;
+    background: #1d1d20;
+    font-family: Montserrat-Regular;
+  }
+
+.main{
+
+    box-sizing: border-box;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+}
+.main {
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.main-container {
+
+    max-width: 100vw;
+    height: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .main-container .main-container-inner {
+  
+    width: 100vw;
+    max-width: 1280px;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 7.5px;
+    display: flex;
+    position: relative;
+  }
+
+  .main-container .main-container-inner .inner-container {
+ 
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 2;
+    background: #1d1d20;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    padding: 15px;
+    overflow: hidden;
+  }.main-container .main-container-inner .inner-container header {
+
+    justify-content: space-between;
+    display: flex;
+  }
+  .main-container .main-container-inner .inner-container header .name {
+ 
+    z-index: 9;
+ 
+  }
+  .main-container .main-container-inner .inner-container header ul {
+ 
+    list-style: none;
+    display: flex;
+  }
+  .main-container .main-container-inner .inner-container header ul {
+    list-style: none;
+  }
+  .main-container .main-container-inner .inner-container header ul a {
+  
+    color: #ccc;
+    margin-left: 30px;
+    line-height: 1.5;
+    display: flex;
+  }
+
+  .main-container .main-container-inner .inner-container main.projects-overview .main-message #me{
+    border-left: solid 1px white;
+    padding-left: 10px;
+    font-size: .8em;
+    font-weight: 100;
+    line-height: 1.6;
+    width: 50%;
+  }
+  .main-container .main-container-inner .inner-container main.projects-overview .main-message .bemvindo{
+    font-size: 30px;
+    padding-left: 10px;
+
+  }
+  .main-container .main-container-inner .inner-container main.projects-overview .main-message {
+  flex-basis: 53.4752%;
+}
+.main-project{
+
+  margin-left: 150px;
+}
+.projects-overview{
+
+  display: flex;
+}
+.aproject{
+  padding-bottom: 10px;
+}

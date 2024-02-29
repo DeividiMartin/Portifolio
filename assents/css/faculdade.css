@@ -1,0 +1,51 @@
+.course-list {
+    list-style-type: none; /* Remove marcadores padrão */
+    cursor: pointer;
+}
+
+.course-item {
+    margin-bottom: 10px;
+}
+
+.sub-list {
+    list-style-type: none; /* Remove marcadores padrão */
+    margin-left: 20px;
+    display: none;
+}
+
+.course-title {
+    font-weight: bold;
+    position: relative;
+}
+
+.arrow-icon {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-icon::before {
+    content: '►'; /* Unicode para uma seta apontando para o lado */
+    font-size: 16px;
+    color: #333; /* Cor da seta, ajuste conforme necessário */
+}
+
+.opened .arrow-icon::before {
+    content: '▼'; /* Unicode para uma seta apontando para baixo quando aberto */
+}
+
+/* Adiciona marcador de ponto ao lado de cada li dentro de sub-list */
+.sub-list li {
+    position: relative;
+}
+
+.sub-list li::before {
+    content: '•'; /* Unicode para um ponto */
+    font-size: 10px;
+    color: #333; /* Cor do ponto, ajuste conforme necessário */
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
