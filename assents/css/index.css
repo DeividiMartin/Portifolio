@@ -31,7 +31,7 @@ body {
   }
 
   .main-container .main-container-inner {
-  
+
     width: 100vw;
     max-width: 1280px;
     box-sizing: border-box;
@@ -43,7 +43,7 @@ body {
   }
 
   .main-container .main-container-inner .inner-container {
- 
+
     -webkit-user-select: none;
     user-select: none;
     z-index: 2;
@@ -59,12 +59,12 @@ body {
     display: flex;
   }
   .main-container .main-container-inner .inner-container header .name {
- 
+
     z-index: 9;
  
   }
   .main-container .main-container-inner .inner-container header ul {
- 
+
     list-style: none;
     display: flex;
   }
@@ -72,7 +72,7 @@ body {
     list-style: none;
   }
   .main-container .main-container-inner .inner-container header ul a {
-  
+   
     color: #ccc;
     margin-left: 30px;
     line-height: 1.5;
@@ -96,13 +96,74 @@ body {
   flex-basis: 53.4752%;
 }
 .main-project{
-
-  margin-left: 150px;
+ 
+  margin-left: 50px;
+  width: 350px;
 }
 .projects-overview{
 
   display: flex;
 }
 .aproject{
+ 
   padding-bottom: 10px;
+}
+.course-list {
+  margin-left: -40px;
+  list-style-type: none; /* Remove marcadores padrão */
+  cursor: pointer;
+}
+
+.course-item {
+  margin-bottom: 10px;
+}
+
+.sub-list {
+  list-style-type: none; /* Remove marcadores padrão */
+  margin-left: 20px;
+  display: none;
+}
+.sub-list li{
+  border-bottom: solid white;
+  padding-bottom: 5px;
+  margin-left: -80px;
+  font-size: 11px;
+
+}
+
+.course-title {
+  font-weight: bold;
+  position: relative;
+}
+
+.arrow-icon {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+
+}
+
+.arrow-icon::before {
+  content: '►'; /* Unicode para uma seta apontando para o lado */
+  font-size: 16px;
+  color: #333; /* Cor da seta, ajuste conforme necessário */
+}
+
+.opened .arrow-icon::before {
+  content: '▼'; /* Unicode para uma seta apontando para baixo quando aberto */
+}
+.faculdade-list li{
+  background: rgb(90, 90, 90);
+  padding: 10PX;
+  padding-left: 30px;
+
+}
+
+.teste-border{
+width: 100%;
+}
+#titulo-facul{
+  margin-top: 50px;
 }
