@@ -21,6 +21,7 @@ body {
 
 /* Estilos para o contêiner principal */
 .main-container {
+
   max-width: 100vw;
   height: 100%;
   box-sizing: border-box;
@@ -145,7 +146,6 @@ body {
   margin-left: -40px;
   font-size: 11px;
 }
-
 /* Estilos para os títulos dos cursos */
 .course-title {
   font-weight: bold;
@@ -205,4 +205,235 @@ body {
   font-size: 12px;
   margin-right: 5px;
   margin-left: 7px;
+}
+
+/* Adaptação para resolução móvel---------------------------------------------- */
+h1 {
+    font-size: 20px; /* Ajuste o tamanho conforme necessário */
+}
+
+h2 {
+    font-size: 10px; /* Ajuste o tamanho conforme necessário */
+}
+
+
+
+@media only screen and (max-width: 600px) {
+/* Estilos Gerais */
+
+body {
+  color: #d1d1d1;
+  background: #1d1d20;
+  font-family: Montserrat-Regular;
+}
+
+.main {
+  box-sizing: border-box;
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+}
+
+/* Estrutura Principal */
+
+.main-container {
+  max-width: 100vw;
+  height: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.main-container .main-container-inner {
+  width: 100vw;
+  max-width: 1280px;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 7.5px;
+  display: flex;
+  position: relative;
+}
+
+/* Área Principal */
+
+.main-container .main-container-inner .inner-container {
+  -webkit-user-select: none;
+  user-select: none;
+  z-index: 2;
+  background: #1d1d20;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  padding: 15px;
+  overflow: hidden;
+}
+
+/* Cabeçalho */
+
+
+.main-container .main-container-inner .inner-container header {
+  justify-content: space-between;
+  display: flex;
+}
+
+.main-container .main-container-inner .inner-container header .name {
+  z-index: 9;
+}
+
+
+.main-container .main-container-inner .inner-container header ul {
+  list-style: none;
+  display: flex;
+
+
+}.main-container .main-container-inner .inner-container header ul img{
+  width:30px;
+  height: 30px;
+
+}
+
+.main-container .main-container-inner .inner-container header ul {
+  margin-left: -90px;
+  list-style: none;
+}
+
+.main-container .main-container-inner .inner-container header ul a {
+  color: #ccc;
+  margin-left: 10px;
+  line-height: 1.5;
+  display: flex;
+}
+
+/* Mensagem Principal */
+
+.main-container .main-container-inner .inner-container main.projects-overview .main-message #me {
+  border-left: solid 1px white;
+  padding-left: 10px;
+  font-size: .8em;
+  font-weight: 100;
+  line-height: 1.6;
+  width: 100%; /* Alterado para ocupar a largura total em dispositivos móveis */
+}
+
+.main-container .main-container-inner .inner-container main.projects-overview .main-message .bemvindo {
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.main-container .main-container-inner .inner-container main.projects-overview .main-message {
+  flex-basis: 100%; /* Alterado para ocupar a largura total em dispositivos móveis */
+}
+
+/* Projetos Individuais */
+
+.main-project {
+  margin-left: 0; /* Alterado para não ter margem à esquerda em dispositivos móveis */
+  width: 100%; /* Alterado para ocupar a largura total em dispositivos móveis */
+}
+
+.projects-overview {
+  display: flex;
+  flex-wrap: wrap; /* Adicionado para garantir que os projetos se ajustem corretamente */
+  margin-top: 20px; /* Ajuste na margem superior */
+}
+
+.aproject {
+  padding-bottom: 10px;
+}
+
+/* Lista de Cursos */
+
+.course-list {
+  margin-left: -40px;
+  list-style-type: none;
+  cursor: pointer;
+  margin-right: -60%;
+}
+
+.course-item {
+  margin-bottom: 10px;
+}
+
+.sub-list {
+  list-style-type: none;
+  margin-left: 0px;
+  display: none;
+  background-color: rgb(90, 90, 90);
+}
+
+.sub-list li {
+  border-bottom: solid 5px #333;
+  padding-bottom: 5px;
+  margin-left: -40px;
+  font-size: 11px;
+}
+
+/* Título do Curso */
+
+.course-title {
+  font-weight: bold;
+  position: relative;
+  background-color: #4d4d4d;
+  padding: 1px;
+  margin-bottom: 5px;
+  font-size: 12px; /* Ajustado para um tamanho de fonte maior em dispositivos móveis */
+}
+
+.course-title p {
+  padding-left: 22px;
+}
+
+/* Ícone da seta */
+
+.arrow-icon {
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+}
+
+.arrow-icon::before {
+  content: '►';
+  font-size: 16px;
+  color: #333;
+}
+
+.opened .arrow-icon::before {
+  content: '▼';
+}
+
+/* Lista de Faculdade */
+
+.faculdade-list li {
+  background: rgb(90, 90, 90);
+  padding-left: 0px;
+}
+
+.teste-border {
+  width: 100%;
+}
+
+#titulo-facul {
+  margin-top: 20px; /* Ajuste na margem superior */
+}
+
+/* Ponto à esquerda dos itens da lista de Faculdade */
+
+.sub-list li::before {
+  content: '\2022';
+  color: #ccc;
+  font-size: 14px;
+  margin-right: 5px;
+  margin-left: 15px;
+}
+
 }
