@@ -1,169 +1,208 @@
+/* Definições gerais para o corpo da página */
 body {
-    color: #d1d1d1;
-    background: #1d1d20;
-    font-family: Montserrat-Regular;
-  }
-
-.main{
-
-    box-sizing: border-box;
-    display: block;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow-y: auto;
+  color: #d1d1d1;  /* Cor do texto */
+  background: #1d1d20;  /* Cor de fundo */
+  font-family: Montserrat-Regular;  /* Fonte principal */
 }
+
+/* Estilos para a barra lateral principal */
 .main {
-    opacity: 1;
-    transition: opacity .2s ease-in-out;
+  box-sizing: border-box;
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  opacity: 1;
+  transition: opacity .2s ease-in-out;  /* Transição de opacidade */
 }
 
+/* Estilos para o contêiner principal */
 .main-container {
+  max-width: 100vw;
+  height: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
 
-    max-width: 100vw;
-    height: 100%;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: flex-start;
-    display: flex;
-  }
+/* Estilos para o contêiner interno principal */
+.main-container .main-container-inner {
+  width: 100vw;
+  max-width: 1280px;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 7.5px;
+  display: flex;
+  position: relative;
+}
 
-  .main-container .main-container-inner {
+/* Estilos para o contêiner interno */
+.main-container .main-container-inner .inner-container {
+  -webkit-user-select: none;
+  user-select: none;
+  z-index: 2;
+  background: #1d1d20;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  padding: 15px;
+  overflow: hidden;
+}
 
-    width: 100vw;
-    max-width: 1280px;
-    box-sizing: border-box;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 7.5px;
-    display: flex;
-    position: relative;
-  }
+/* Estilos para o cabeçalho dentro do contêiner interno */
+.main-container .main-container-inner .inner-container header {
+  justify-content: space-between;
+  display: flex;
+}
 
-  .main-container .main-container-inner .inner-container {
+/* Estilos para o nome no cabeçalho */
+.main-container .main-container-inner .inner-container header .name {
+  z-index: 9;
+}
 
-    -webkit-user-select: none;
-    user-select: none;
-    z-index: 2;
-    background: #1d1d20;
-    border-radius: 5px;
-    flex-wrap: wrap;
-    flex-basis: 100%;
-    padding: 15px;
-    overflow: hidden;
-  }.main-container .main-container-inner .inner-container header {
+/* Estilos para a lista de links no cabeçalho */
+.main-container .main-container-inner .inner-container header ul {
+  list-style: none;
+  display: flex;
+}
 
-    justify-content: space-between;
-    display: flex;
-  }
-  .main-container .main-container-inner .inner-container header .name {
+/* Estilos para os itens da lista no cabeçalho */
+.main-container .main-container-inner .inner-container header ul a {
+  color: #ccc;
+  margin-left: 30px;
+  line-height: 1.5;
+  display: flex;
+}
 
-    z-index: 9;
- 
-  }
-  .main-container .main-container-inner .inner-container header ul {
+/* Estilos para a seção de projetos no contêiner interno */
+.main-container .main-container-inner .inner-container main.projects-overview .main-message #me {
+  border-left: solid 1px white;
+  padding-left: 10px;
+  font-size: .8em;
+  font-weight: 100;
+  line-height: 1.6;
+  width: 50%;
+}
 
-    list-style: none;
-    display: flex;
-  }
-  .main-container .main-container-inner .inner-container header ul {
-    list-style: none;
-  }
-  .main-container .main-container-inner .inner-container header ul a {
-   
-    color: #ccc;
-    margin-left: 30px;
-    line-height: 1.5;
-    display: flex;
-  }
+/* Estilos para a mensagem de boas-vindas na seção de projetos */
+.main-container .main-container-inner .inner-container main.projects-overview .main-message .bemvindo {
+  font-size: 30px;
+  padding-left: 10px;
+}
 
-  .main-container .main-container-inner .inner-container main.projects-overview .main-message #me{
-    border-left: solid 1px white;
-    padding-left: 10px;
-    font-size: .8em;
-    font-weight: 100;
-    line-height: 1.6;
-    width: 50%;
-  }
-  .main-container .main-container-inner .inner-container main.projects-overview .main-message .bemvindo{
-    font-size: 30px;
-    padding-left: 10px;
-
-  }
-  .main-container .main-container-inner .inner-container main.projects-overview .main-message {
+/* Estilos para a mensagem principal na seção de projetos */
+.main-container .main-container-inner .inner-container main.projects-overview .main-message {
   flex-basis: 53.4752%;
 }
-.main-project{
- 
+
+/* Estilos para projetos individuais no contêiner interno */
+.main-project {
   margin-left: 50px;
   width: 350px;
 }
-.projects-overview{
 
+/* Estilos para a seção de visão geral de projetos */
+.projects-overview {
+  margin-top: 70px;
   display: flex;
 }
-.aproject{
- 
+
+/* Estilos para projetos individuais na visão geral */
+.aproject {
   padding-bottom: 10px;
 }
+
+/* Estilos para a lista de cursos */
 .course-list {
   margin-left: -40px;
-  list-style-type: none; /* Remove marcadores padrão */
+  list-style-type: none;
   cursor: pointer;
+  margin-right: -60%;
 }
 
+/* Estilos para itens individuais na lista de cursos */
 .course-item {
   margin-bottom: 10px;
 }
 
+/* Estilos para a lista secundária */
 .sub-list {
-  list-style-type: none; /* Remove marcadores padrão */
-  margin-left: 20px;
+  list-style-type: none;
+  margin-left: 0px;
   display: none;
+  background-color: rgb(90, 90, 90);
 }
-.sub-list li{
-  border-bottom: solid white;
+
+/* Estilos para itens individuais na lista secundária */
+.sub-list li {
+  border-bottom: solid 5px #333;
   padding-bottom: 5px;
-  margin-left: -80px;
+  margin-left: -40px;
   font-size: 11px;
-
 }
 
+/* Estilos para os títulos dos cursos */
 .course-title {
   font-weight: bold;
   position: relative;
+  background-color: #4d4d4d;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 10px;
 }
 
+/* Estilos para o conteúdo dos títulos dos cursos */
+.course-title p {
+  padding-left: 22px;
+}
+
+/* Estilos para o ícone de seta */
 .arrow-icon {
   position: absolute;
-  left: -20px;
+  left: 3px;
   top: 50%;
   transform: translateY(-50%);
   width: 20px;
-
 }
 
+/* Estilos para a seta antes de abrir a lista */
 .arrow-icon::before {
-  content: '►'; /* Unicode para uma seta apontando para o lado */
+  content: '►';
   font-size: 16px;
-  color: #333; /* Cor da seta, ajuste conforme necessário */
+  color: #333;
 }
 
+/* Estilos para a seta após abrir a lista */
 .opened .arrow-icon::before {
-  content: '▼'; /* Unicode para uma seta apontando para baixo quando aberto */
+  content: '▼';
 }
-.faculdade-list li{
+
+/* Estilos para itens da lista de faculdade */
+.faculdade-list li {
   background: rgb(90, 90, 90);
-  padding: 10PX;
-  padding-left: 30px;
-
+  padding-left: 0px;
 }
 
-.teste-border{
-width: 100%;
+/* Estilos para uma borda de teste */
+.teste-border {
+  width: 100%;
 }
-#titulo-facul{
+
+/* Estilos para o título da faculdade */
+#titulo-facul {
   margin-top: 50px;
+}
+
+/* Estilos para adicionar um ponto à esquerda de cada item na lista secundária */
+.sub-list li::before {
+  content: '\2022';
+  color: #ccc;
+  font-size: 12px;
+  margin-right: 5px;
+  margin-left: 7px;
 }
