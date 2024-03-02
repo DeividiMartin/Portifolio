@@ -219,6 +219,13 @@ body {
   margin-right: 5px;
   margin-left: 7px;
 }
+.aproject {
+  padding-bottom: 19px;
+}
+.curso {
+  margin-top: 60px;
+}
+
 
 /* Adaptação para resolução móvel---------------------------------------------- */
 
@@ -344,6 +351,7 @@ body {
 
 .main-container .main-container-inner .inner-container main.projects-overview .main-message {
   flex-basis: 100%; /* Alterado para ocupar a largura total em dispositivos móveis */
+
 }
 
 /* Projetos Individuais */
@@ -351,6 +359,12 @@ body {
 .main-project {
   margin-left: 0; /* Alterado para não ter margem à esquerda em dispositivos móveis */
   width: 100%; /* Alterado para ocupar a largura total em dispositivos móveis */
+}
+.aproject a {
+  text-decoration: none;
+  color: white;
+  background: #4d4d4d;
+  padding: 5px;
 }
 
 .projects-overview {
