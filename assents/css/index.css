@@ -207,6 +207,8 @@ body {
 /* Estilos para o título da faculdade */
 #titulo-facul {
   margin-top: 50px;
+  margin-bottom: 30px;
+  width: 500px;
 }
 
 /* Estilos para adicionar um ponto à esquerda de cada item na lista secundária */
