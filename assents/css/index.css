@@ -60,7 +60,18 @@ body {
   justify-content: space-between;
   display: flex;
 }
+.download-link {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+ 
+}
 
+#download-ico {
+  margin-right: 10px; /* Ajuste a margem conforme necessário para dar espaço entre o ícone e o texto */
+  width: 20px;
+  margin-right: -20px;
+}
 /* Estilos para o nome no cabeçalho */
 .main-container .main-container-inner .inner-container header .name {
   z-index: 9;
