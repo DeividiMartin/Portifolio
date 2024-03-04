@@ -54,6 +54,19 @@ body {
   padding: 15px;
   overflow: hidden;
 }
+.aproject {
+ 
+  width: 563px;
+  border-bottom: solid 10px #1d1d20;
+  background: #4d4d4d;
+  padding-top: 10px;
+}
+.aproject a {
+  text-decoration: none;
+  color: white;
+  padding-top: 10px;
+  width: 217px;
+}
 
 /* Estilos para o cabeçalho dentro do contêiner interno */
 .main-container .main-container-inner .inner-container header {
@@ -125,9 +138,7 @@ body {
 }
 
 /* Estilos para projetos individuais na visão geral */
-.aproject {
-  padding-bottom: 10px;
-}
+
 
 /* Estilos para a lista de cursos */
 .course-list {
@@ -153,7 +164,6 @@ body {
 /* Estilos para itens individuais na lista secundária */
 .sub-list li {
   border-bottom: solid 5px #333;
-  padding-bottom: 5px;
   margin-left: -40px;
   font-size: 11px;
 }
@@ -162,9 +172,9 @@ body {
   font-weight: bold;
   position: relative;
   background-color: #4d4d4d;
-  padding: 10px;
-  margin-bottom: 5px;
-  font-size: 10px;
+  font-size: 15px;
+  border: solid 5px #1d1d20;
+  margin-left: -6px;
 }
 
 /* Estilos para o conteúdo dos títulos dos cursos */
@@ -215,18 +225,32 @@ body {
 .sub-list li::before {
   content: '\2022';
   color: #ccc;
-  font-size: 12px;
+  font-size: 20px;
   margin-right: 5px;
   margin-left: 7px;
+  vertical-align: -5px;
 }
+
+
 .aproject {
-  padding-bottom: 19px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 .curso {
   margin-top: 60px;
 }
+.curso a {
+  text-decoration: none;
+  color: white;
 
+}
 
+.curso li {
+  list-style-type: none;
+  margin-left: -44px;
+  margin-top: 35px ;
+  padding-bottom: 5px ;
+}
 /* Adaptação para resolução móvel---------------------------------------------- */
 
 
@@ -417,6 +441,7 @@ body {
 
 .course-title p {
   padding-left: 22px;
+
 }
 
 /* Ícone da seta */
