@@ -17,9 +17,9 @@ const translations = {
   pt: {
     // Header
     "header.title": "Deividi Martin",
-    "header.role": "Desenvolvedor Backend",
+    "header.role": "Desenvolvedor FullStack",
     "header.description":
-      "Especializado em desenvolvimento backend com Java e Spring Boot, criando soluções robustas e escaláveis.",
+      " ",
     "header.email": "Email",
     "header.github": "GitHub",
     "header.linkedin": "LinkedIn",
@@ -28,11 +28,11 @@ const translations = {
     // About
     "about.title": "Sobre",
     "about.paragraph1":
-      "Com sólida compreensão de programação Backend e habilidades práticas em Java, estou preparado para enfrentar desafios complexos de desenvolvimento. Minha experiência inclui desenvolvimento Backend, criação de interfaces gráficas, interação com Banco de Dados e manipulação de arquivos.",
+      "Sou apaixonado por transformar ideias em soluções reais. Atuo como Desenvolvedor Back-End Júnior com foco em Node.js, TypeScript e APIs REST, construindo aplicações que conectam dados, sistemas e pessoas.",
     "about.paragraph2":
-      "Atualmente, estou aprimorando minhas competências em Spring Boot para oferecer soluções mais robustas e eficientes. Tenho conhecimento em sistemas de controle de versão e metodologias tanto ágeis quanto tradicionais.",
+      "Minha trajetória inclui projetos práticos: desde automações que integram ERPs a marketplaces, até sistemas completos de orçamento e e-commerce. Essa vivência me ensinou a pensar além do código — entender processos, otimizar rotinas e entregar valor para negócios reais.",
     "about.paragraph3":
-      "Essas habilidades, aliadas a uma proficiência em IDEs modernas, me permitem transformar conceitos em soluções tangíveis e escaláveis.",
+      "Hoje meu foco está em back-end, arquitetura de APIs e bancos de dados, mas trago também experiência em front-end (Tailwind CSS, React), o que me permite dialogar bem em equipes multidisciplinares.",
     "about.technologies": "Tecnologias",
 
     // Projects
@@ -70,12 +70,12 @@ const translations = {
     "language.portuguese": "Português",
     "language.english": "English",
   },
-  en: {
+    en: {
     // Header
     "header.title": "Deividi Martin",
-    "header.role": "Backend Developer",
+    "header.role": "Full-Stack Developer",
     "header.description":
-      "Specialized in backend development with Java and Spring Boot, creating robust and scalable solutions.",
+      " ",
     "header.email": "Email",
     "header.github": "GitHub",
     "header.linkedin": "LinkedIn",
@@ -84,14 +84,14 @@ const translations = {
     // About
     "about.title": "About",
     "about.paragraph1":
-      "With solid understanding of Backend programming and practical skills in Java, I'm prepared to face complex development challenges. My experience includes Backend development, GUI creation, Database interaction, and file manipulation.",
+      "I’m passionate about turning ideas into real solutions. I work as a Junior Back-End Developer focused on Node.js, TypeScript and REST APIs, building applications that connect data, systems and people.",
     "about.paragraph2":
-      "Currently, I'm enhancing my Spring Boot competencies to offer more robust and efficient solutions. I have knowledge in version control systems and both agile and traditional methodologies.",
+      "My journey includes practical projects: from automations integrating ERPs with marketplaces to complete budgeting and e-commerce systems. This experience taught me to think beyond code — understanding processes, optimizing routines and delivering value to real businesses.",
     "about.paragraph3":
-      "These skills, combined with proficiency in modern IDEs, allow me to transform concepts into tangible and scalable solutions.",
+      "Today my focus is on back-end, API architecture and databases, but I also bring front-end experience (Tailwind CSS, React), which allows me to communicate effectively in multidisciplinary teams.",
     "about.technologies": "Technologies",
 
-    // Projects
+    // Projects (mantém como já está)
     "projects.title": "Main Projects",
     "projects.stockControl.title": "Stock Control",
     "projects.stockControl.description":
@@ -125,6 +125,7 @@ const translations = {
     "language.portuguese": "Português",
     "language.english": "English",
   },
+
 }
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {

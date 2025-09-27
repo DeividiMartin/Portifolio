@@ -60,7 +60,7 @@ export const courses = [
       en: "Complete Java Object-Oriented Programming + Projects",
     },
     provider: "Udemy",
-    certificate: "/assents/arquivos/UC-f4d6d15b-dca6-4348-a959-efb9fbffa417.pdf",
+    certificate: "/assets/arquivos/UC-f4d6d15b-dca6-4348-a959-efb9fbffa417.pdf",
   },
   {
     title: {
@@ -68,7 +68,15 @@ export const courses = [
       en: "Complete Web Development - 20 courses + 20 projects",
     },
     provider: "Udemy",
-    certificate: "#",
+    certificate: "/assets/arquivos/UC-f690ea72-247b-412f-b678-dc4c86d0ec8e.pdf",
+  },
+    {
+    title: {
+      pt: "Algoritmos e Lógica de Programação - O Curso COMPLETO",
+      en: "Algorithms and Programming Logic – The COMPLETE Course",
+    },
+    provider: "Udemy",
+  certificate: "/assets/arquivos/UC-a66a2c69-470c-4662-8990-d3ab959fcc40.pdf",
   },
 ]
 
