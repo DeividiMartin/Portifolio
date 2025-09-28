@@ -20,8 +20,6 @@ const translations = {
     // Header
     'header.title': 'Deividi Martin',
     'header.role': 'Desenvolvedor Backend',
-    'header.description':
-      'Especializado em desenvolvimento backend com Java e Spring Boot, criando soluções robustas e escaláveis.',
     'header.email': 'Email',
     'header.github': 'GitHub',
     'header.linkedin': 'LinkedIn',
@@ -77,8 +75,6 @@ const translations = {
     // Header
     'header.title': 'Deividi Martin',
     'header.role': 'Backend Developer',
-    'header.description':
-      'Specialized in backend development with Java and Spring Boot, creating robust and scalable solutions.',
     'header.email': 'Email',
     'header.github': 'GitHub',
     'header.linkedin': 'LinkedIn',
@@ -87,11 +83,11 @@ const translations = {
     // About
     'about.title': 'About',
     'about.paragraph1':
-      "With solid understanding of Backend programming and practical skills in Java, I'm prepared to face complex development challenges. My experience includes Backend development, GUI creation, Database interaction, and file manipulation.",
+      'I am passionate about turning ideas into real solutions. I work as a Junior Back-End Developer focused on Node.js, TypeScript, and REST APIs, building applications that connect data, systems, and people.',
     'about.paragraph2':
-      "Currently, I'm enhancing my Spring Boot competencies to offer more robust and efficient solutions. I have knowledge in version control systems and both agile and traditional methodologies.",
+      'My journey includes practical projects: from automations that integrate ERPs with marketplaces, to complete budgeting and e-commerce systems. This experience has taught me to think beyond code — understanding processes, optimizing routines, and delivering value to real businesses.',
     'about.paragraph3':
-      'These skills, combined with proficiency in modern IDEs, allow me to transform concepts into tangible and scalable solutions.',
+      'Today my focus is on back-end, API architecture, and databases, but I also bring front-end experience (Tailwind CSS, React), which allows me to communicate effectively in multidisciplinary teams.',
     'about.technologies': 'Technologies',
 
     // Projects
@@ -99,7 +95,7 @@ const translations = {
     'projects.stockControl.title': 'Stock Control',
     'projects.stockControl.description':
       'Complete stock control system developed in Java with graphical interface and database.',
-    'projects.workshop.title': 'Workshop Spring Boot JPA',
+    'projects.workshop.title': 'Spring Boot JPA Workshop',
     'projects.workshop.description':
       'Project demonstrating advanced Spring Boot concepts with JPA and entity relationships.',
     'projects.stockEngine.title': 'StockEngine',
@@ -124,10 +120,10 @@ const translations = {
     // Theme toggle
     'theme.light': 'Light Mode',
     'theme.dark': 'Dark Mode',
-    'theme.toggle': 'Toggle theme',
+    'theme.toggle': 'Toggle Theme',
 
     // Language toggle
-    'language.portuguese': 'Português',
+    'language.portuguese': 'Portuguese',
     'language.english': 'English',
   },
 };
