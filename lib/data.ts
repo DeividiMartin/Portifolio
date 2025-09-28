@@ -1,182 +1,116 @@
 export const skills = [
-  "Java",
-  "Spring Boot",
-  "Python",
-  "JavaScript",
-  "SQL",
-  "Git",
-  "HTML/CSS",
-  "REST APIs",
-  "MySQL",
-  "PostgreSQL",
-]
+  'Java',
+  'Spring Boot',
+  'Python',
+  'JavaScript',
+  'SQL',
+  'Git',
+  'HTML/CSS',
+  'REST APIs',
+  'MySQL',
+  'PostgreSQL',
+];
 
 export const projects = [
   {
-    id: "stock-control",
+    id: 'Quotation System',
     title: {
-      pt: "Controle de Estoque",
-      en: "Stock Control",
+      pt: 'Mecanica FGT — Sistema de Orçamentos',
+      en: 'FGT Mechanics — Quotation System',
     },
     description: {
-      pt: "Sistema completo de controle de estoque desenvolvido em Java com interface gráfica e banco de dados.",
-      en: "Complete stock control system developed in Java with graphical interface and database.",
+      pt: 'Sistema desktop completo desenvolvido em Electron, React 18 e TypeScript, para gestão de orçamentos automotivos. Permite controlar clientes, criar orçamentos detalhados, gerenciar pagamentos e imprimir documentos, tudo offline.',
+      en: 'Complete desktop system developed in Electron, React 18, and TypeScript for managing automotive quotes. It allows managing clients, creating detailed quotes, handling payments, and printing documents, all offline.',
     },
-    tech: ["Java", "Swing", "MySQL"],
-    link: "https://github.com/DeividiMartin/Controle-de-estoque",
+    tech: [
+      'React 18',
+      'TypeScript',
+      'Tailwind CSS',
+      'Node.js',
+      'SQLite3',
+      'Electron',
+    ],
+    link: '',
   },
   {
-    id: "workshop-spring",
+    id: 'E-commerce',
     title: {
-      pt: "Workshop Spring Boot JPA",
-      en: "Workshop Spring Boot JPA",
+      pt: 'E-commerce (Contribuição Pessoal)',
+      en: 'E-commerce (Personal Contribution)',
     },
     description: {
-      pt: "Projeto demonstrando conceitos avançados de Spring Boot com JPA e relacionamentos de entidades.",
-      en: "Project demonstrating advanced Spring Boot concepts with JPA and entity relationships.",
+      pt: 'Desenvolvi páginas do e-commerce de um CDV usando React, TypeScript e Tailwind CSS, incluindo login, cadastro, listagem de produtos e footer. Integrei APIs de frete e CEP, e dei suporte no backend com Node.js, Prisma e PostgreSQL, além de configurar o ambiente com Docker.',
+      en: 'Developed e-commerce pages for a CDV using React, TypeScript, and Tailwind CSS, including login, registration, product listing, and footer. Integrated shipping and CEP APIs, and provided backend support using Node.js, Prisma, and PostgreSQL, as well as setting up the environment with Docker.',
     },
-    tech: ["Java", "Spring Boot", "JPA", "H2"],
-    link: "https://github.com/DeividiMartin/worckshop-springboot3-jpa",
+    tech: [
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'Node.js',
+      'Prisma',
+      'PostgreSQL',
+      'Docker',
+    ],
+    link: 'https://doissautopecas.com.br',
   },
   {
-    id: "stock-engine",
+    id: 'stock-engine',
     title: {
-      pt: "StockEngine",
-      en: "StockEngine",
+      pt: 'Centro de Desmonte Veicular – Vendas em Condicional',
+      en: 'Vehicle Dismantling Center – Consignment Sales',
     },
     description: {
-      pt: "Engine de gerenciamento de estoque com arquitetura robusta e padrões de design.",
-      en: "Stock management engine with robust architecture and design patterns.",
+      pt: 'Sistema desktop para CDV (Centro de Desmonte Veicular) que controla clientes, gerencia vendas em condicionais, acompanha ganhos e pagamentos, aplica filtros avançados e imprime documentos. Integrado com o sistema ERP da empresa, realizando baixa automática de estoque com autenticação segura baseada em token para garantir integridade e sincronização dos dados.',
+      en: 'Desktop system for a Vehicle Dismantling Center (VDC) that manages customers, conditional sales, revenue and payments tracking, advanced filters, and document printing. Integrated with the company’s ERP system, automatically updating inventory using secure token-based authentication to ensure data integrity and synchronization..',
     },
-    tech: ["Java", "Spring", "Design Patterns"],
-    link: "https://github.com/DeividiMartin/StockEgine",
+    tech: [
+      'React 18',
+      'TypeScript',
+      'Tailwind CSS',
+      'Node.js',
+      'SQLite3',
+      'Electron',
+    ],
+    link: '',
   },
-]
+];
 
 export const courses = [
   {
     title: {
-      pt: "Java COMPLETO Programação Orientada a Objetos + Projetos",
-      en: "Complete Java Object-Oriented Programming + Projects",
+      pt: 'Java COMPLETO Programação Orientada a Objetos + Projetos',
+      en: 'Complete Java Object-Oriented Programming + Projects',
     },
-    provider: "Udemy",
-    certificate: "/assets/arquivos/UC-f4d6d15b-dca6-4348-a959-efb9fbffa417.pdf",
+    provider: 'Udemy',
+    certificate: '/assets/arquivos/UC-f4d6d15b-dca6-4348-a959-efb9fbffa417.pdf',
   },
   {
     title: {
-      pt: "Desenvolvimento Web Completo - 20 cursos + 20 projetos",
-      en: "Complete Web Development - 20 courses + 20 projects",
+      pt: 'Desenvolvimento Web Completo - 20 cursos + 20 projetos',
+      en: 'Complete Web Development - 20 courses + 20 projects',
     },
-    provider: "Udemy",
-    certificate: "/assets/arquivos/UC-f690ea72-247b-412f-b678-dc4c86d0ec8e.pdf",
+    provider: 'Udemy',
+    certificate: '/assets/arquivos/UC-f690ea72-247b-412f-b678-dc4c86d0ec8e.pdf',
   },
-    {
+  {
     title: {
-      pt: "Algoritmos e Lógica de Programação - O Curso COMPLETO",
-      en: "Algorithms and Programming Logic – The COMPLETE Course",
+      pt: 'Algoritmos e Lógica de Programação - O Curso COMPLETO',
+      en: 'Algorithms and Programming Logic – The COMPLETE Course',
     },
-    provider: "Udemy",
-  certificate: "/assets/arquivos/UC-a66a2c69-470c-4662-8990-d3ab959fcc40.pdf",
+    provider: 'Udemy',
+    certificate: '/assets/arquivos/UC-a66a2c69-470c-4662-8990-d3ab959fcc40.pdf',
   },
-]
+];
 
 export const academicSubjects = [
   {
-    id: "algorithms",
     title: {
-      pt: "Algoritmos e Programação",
-      en: "Algorithms and Programming",
+      pt: 'Tecnolofia em Analise e Desenvolvimento De sistemas - Faculdade Completa',
+      en: 'Technology in Systems Analysis and Development - Complete Degree',
     },
-    topics: {
-      pt: [
-        "Representação de algoritmos em forma de pseudocódigo",
-        "Introdução à lógica de programação e ambiente Python",
-        "Conceitos básicos de algoritmos em Python",
-        "Variáveis, tipos de dados e operadores",
-        "Estruturas condicionais e de repetição",
-        "Listas, matrizes e funções em Python",
-      ],
-      en: [
-        "Algorithm representation in pseudocode form",
-        "Introduction to programming logic and Python environment",
-        "Basic algorithm concepts in Python",
-        "Variables, data types and operators",
-        "Conditional and repetition structures",
-        "Lists, arrays and functions in Python",
-      ],
-    },
+    provider:
+      'UNIVERSIDADE REGIIONAL DO ALTO URUGUAI E DAS MISSÕES - ERECHIM - RS',
+    certificate:
+      '/assets/arquivos/107539_Tecnologia_em_Análise_e_Desenvolvimento_de_Sistemas [assinado].pdf',
   },
-  {
-    id: "oop",
-    title: {
-      pt: "Programação Orientada a Objetos",
-      en: "Object-Oriented Programming",
-    },
-    topics: {
-      pt: [
-        "Introdução a classes, objetos e métodos",
-        "Encapsulamento e modificadores de acesso",
-        "Herança e polimorfismo",
-        "Classes abstratas e interfaces",
-        "Tratamento de exceções",
-        "Padrões de projeto orientados a objeto",
-      ],
-      en: [
-        "Introduction to classes, objects and methods",
-        "Encapsulation and access modifiers",
-        "Inheritance and polymorphism",
-        "Abstract classes and interfaces",
-        "Exception handling",
-        "Object-oriented design patterns",
-      ],
-    },
-  },
-  {
-    id: "webdev",
-    title: {
-      pt: "Desenvolvimento Web",
-      en: "Web Development",
-    },
-    topics: {
-      pt: [
-        "Criação e formatação de páginas web com HTML/CSS",
-        "Comportamento com JavaScript",
-        "Linguagem SQL: comandos DDL e DML",
-        "Arquitetura da Web",
-        "Servidores de página e de aplicação",
-      ],
-      en: [
-        "Web page creation and formatting with HTML/CSS",
-        "Behavior with JavaScript",
-        "SQL language: DDL and DML commands",
-        "Web Architecture",
-        "Page and application servers",
-      ],
-    },
-  },
-  {
-    id: "software",
-    title: {
-      pt: "Engenharia de Software I & II",
-      en: "Software Engineering I & II",
-    },
-    topics: {
-      pt: [
-        "Conceitos da engenharia de software",
-        "Ciclo de vida de software",
-        "Metodologias ágeis e Scrum",
-        "Análise e preparo de requisitos",
-        "Diagramas de casos de uso",
-        "Garantia da qualidade de software",
-      ],
-      en: [
-        "Software engineering concepts",
-        "Software life cycle",
-        "Agile methodologies and Scrum",
-        "Requirements analysis and preparation",
-        "Use case diagrams",
-        "Software quality assurance",
-      ],
-    },
-  },
-]
+];
