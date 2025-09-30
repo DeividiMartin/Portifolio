@@ -26,7 +26,7 @@ export function ProjectsSection() {
                 {project.title[language]}
               </h3>
               <Button variant='ghost' size='sm' asChild>
-                <a href={project.link} target='_blank' rel='noreferrer'>
+                <a href={project.link} rel='noreferrer'>
                   <ExternalLink className='w-4 h-4' />
                 </a>
               </Button>

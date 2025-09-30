@@ -18,7 +18,6 @@ export default function Portfolio() {
         <ProjectsSection />
         <EducationSection />
         <CoursesSection />
-        <Footer />
       </div>
     </div>
   );

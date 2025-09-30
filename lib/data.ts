@@ -30,7 +30,7 @@ export const projects = [
       'SQLite3',
       'Electron',
     ],
-    link: '',
+    link: '/projetos/orcamentoFgt',
   },
   {
     id: 'E-commerce',
@@ -61,7 +61,7 @@ export const projects = [
     },
     description: {
       pt: 'Sistema desktop para CDV (Centro de Desmonte Veicular) que controla clientes, gerencia vendas em condicionais, acompanha ganhos e pagamentos, aplica filtros avançados e imprime documentos. Integrado com o sistema ERP da empresa, realizando baixa automática de estoque com autenticação segura baseada em token para garantir integridade e sincronização dos dados.',
-      en: 'Desktop system for a Vehicle Dismantling Center (VDC) that manages customers, conditional sales, revenue and payments tracking, advanced filters, and document printing. Integrated with the company’s ERP system, automatically updating inventory using secure token-based authentication to ensure data integrity and synchronization..',
+      en: 'Desktop system for a Vehicle Dismantling Center (VDC) that manages customers, conditional sales, revenue and payments tracking, advanced filters, and document printing. Integrated with the company’s ERP system, automatically updating inventory using secure token-based authentication to ensure data integrity and synchronization.',
     },
     tech: [
       'React 18',
