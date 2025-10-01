@@ -71,7 +71,7 @@ export const projects = [
       'SQLite3',
       'Electron',
     ],
-    link: '',
+    link: '/projetos/condicioaisDoiss',
   },
 ];
 

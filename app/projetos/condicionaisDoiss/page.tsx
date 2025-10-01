@@ -3,24 +3,24 @@
 import React from 'react';
 import { useLanguage } from '@/contexts/language-context';
 
-export default function OrcamentoProjectPage() {
+export default function CondicionalProjectPage() {
   const { language } = useLanguage();
 
   const content = {
     title: {
-      pt: 'Mecanica FGT — Sistema de Orçamentos',
-      en: 'FGT Mechanics — Quotation System',
+      pt: 'CDV Doiss — Sistema de condicionais',
+      en: 'Doiss CDV — Quotation System',
     },
     overview: {
-      pt: 'Sistema desktop completo desenvolvido em Electron, React 18 e TypeScript, para gestão de orçamentos automotivos. Permite controlar clientes, criar orçamentos detalhados, gerenciar pagamentos e imprimir documentos, tudo offline.',
+      pt: 'Sistema desktop completo desenvolvido em Electron, React 18 e TypeScript, para gestão de condicionais automotivos. Permite controlar clientes, criar condicionais detalhados, gerenciar pagamentos e imprimir documentos, tudo offline.',
       en: 'Complete desktop system developed in Electron, React 18, and TypeScript for managing automotive quotes. It allows managing clients, creating detailed quotes, handling payments, and printing documents, all offline.',
     },
     features: {
       pt: [
         'Gestão completa de clientes',
-        'Criação e controle de orçamentos automotivos',
+        'Criação e controle de condicionais automotivos',
         'Controle financeiro com pagamentos parciais/integral',
-        'Impressão de orçamentos com layout profissional',
+        'Impressão de condicionais com layout profissional',
         'Persistência de filtro na lista de clientes',
         'Interface moderna e responsiva',
       ],
@@ -44,7 +44,7 @@ export default function OrcamentoProjectPage() {
     usageFlow: {
       pt: [
         'Cadastre clientes com informações completas',
-        'Crie orçamentos detalhados (peças + mão de obra)',
+        'Crie condicionais detalhados (peças + mão de obra)',
         'Registre pagamentos parciais ou integrais',
         'Imprima os orçamentos em layout profissional',
         'Volte para a lista de clientes sem perder filtros aplicados',
