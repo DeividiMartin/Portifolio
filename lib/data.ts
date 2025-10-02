@@ -30,6 +30,7 @@ export const projects = [
       'SQLite3',
       'Electron',
     ],
+    image: '/automotive-quotation-system-desktop-app.jpg',
     link: '/projetos/orcamentoFgt',
   },
   {
@@ -51,6 +52,7 @@ export const projects = [
       'PostgreSQL',
       'Docker',
     ],
+    image: '/modern-ecommerce-website-auto-parts.jpg',
     link: 'https://doissautopecas.com.br',
   },
   {
@@ -71,7 +73,8 @@ export const projects = [
       'SQLite3',
       'Electron',
     ],
-    link: '/projetos/condicioaisDoiss',
+    image: '/vehicle-parts-inventory-management-system.jpg',
+    link: '/projetos/condicionaisDoiss',
   },
 ];
 

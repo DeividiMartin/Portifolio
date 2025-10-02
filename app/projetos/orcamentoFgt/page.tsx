@@ -1,8 +1,9 @@
 'use client';
-
-import React from 'react';
 import { useLanguage } from '@/contexts/language-context';
-
+import { Button } from '@/components/ui/button';
+import { ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image';
 export default function OrcamentoProjectPage() {
   const { language } = useLanguage();
 
@@ -68,77 +69,90 @@ export default function OrcamentoProjectPage() {
   };
 
   return (
-    <main className='min-h-screen bg-background text-foreground py-12 px-6'>
-      <div className='max-w-4xl mx-auto space-y-16'>
-        {/* Título */}
-        <section className='text-center space-y-4'>
-          <h1 className='text-4xl font-bold'>{content.title[language]}</h1>
-          <p className='text-lg text-muted-foreground'>
-            {content.overview[language]}
-          </p>
-        </section>
+    <div className='space-y-12 animate-in fade-in slide-in-from-bottom-4 duration-500'>
+      <Link
+        href='/#projects'
+        className='inline-block transition-transform hover:scale-105'
+      >
+        <Button
+          variant='ghost'
+          size='sm'
+          className='transition-all duration-200 hover:bg-accent'
+        >
+          <ArrowLeft className='w-4 h-4 mr-2' />
+          {language === 'pt' ? 'Voltar' : 'Back'}
+        </Button>
+      </Link>
 
-        {/* Funcionalidades */}
-        <section className='space-y-4'>
-          <h2 className='text-2xl font-semibold'>
-            {' '}
-            {language === 'pt'
-              ? 'Funcionalidades Principais'
-              : 'Main Features'}{' '}
-          </h2>
-          <ul className='list-disc pl-6 space-y-2'>
-            {content.features[language].map((feature, idx) => (
-              <li key={idx}>{feature}</li>
-            ))}
-          </ul>
-        </section>
+      {/* Título */}
+      <section className='text-center space-y-4 animate-in fade-in slide-in-from-top-4 duration-700'>
+        <h1 className='text-4xl font-bold text-balance'>
+          {content.title[language]}
+        </h1>
+        <p className='text-lg text-muted-foreground text-pretty max-w-3xl mx-auto'>
+          {content.overview[language]}
+        </p>
+      </section>
 
-        {/* Tecnologias */}
-        <section className='space-y-4'>
-          <h2 className='text-2xl font-semibold'>Technologies</h2>
-          <div className='grid grid-cols-2 sm:grid-cols-3 gap-4'>
-            {content.technologies.map((tech, idx) => (
-              <span
-                key={idx}
-                className='bg-card text-card-foreground rounded px-3 py-2 text-sm text-center shadow'
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        </section>
+      {/* Funcionalidades */}
+      <section className='space-y-4 animate-in fade-in slide-in-from-left-4 duration-700 delay-300'>
+        <h2 className='text-2xl font-semibold'>
+          {language === 'pt' ? 'Funcionalidades Principais' : 'Main Features'}
+        </h2>
+        <ul className='list-disc pl-6 space-y-2 text-muted-foreground'>
+          {content.features[language].map((feature, idx) => (
+            <li key={idx} className='transition-colors hover:text-foreground'>
+              {feature}
+            </li>
+          ))}
+        </ul>
+      </section>
 
-        {/* Fluxo de Uso */}
-        <section className='space-y-4'>
-          <h2 className='text-2xl font-semibold'>
-            {language === 'pt' ? 'Fluxo de Uso' : 'Usage Flow'}
-          </h2>
-          <ol className='list-decimal pl-6 space-y-2'>
-            {content.usageFlow[language].map((step, idx) => (
-              <li key={idx}>{step}</li>
-            ))}
-          </ol>
-        </section>
+      {/* Tecnologias */}
+      <section className='space-y-4 animate-in fade-in slide-in-from-right-4 duration-700 delay-500'>
+        <h2 className='text-2xl font-semibold'>Technologies</h2>
+        <div className='grid grid-cols-2 sm:grid-cols-3 gap-4'>
+          {content.technologies.map((tech, idx) => (
+            <span
+              key={idx}
+              className='bg-card text-card-foreground rounded-lg px-4 py-3 text-sm text-center shadow-sm border border-border transition-all duration-200 hover:shadow-md hover:scale-105 hover:border-primary/50'
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      </section>
 
-        {/* Roadmap */}
-        <section className='space-y-4'>
-          <h2 className='text-2xl font-semibold'>
-            {language === 'pt'
-              ? 'Próximas Funcionalidades'
-              : 'Upcoming Features'}
-          </h2>
-          <ul className='list-disc pl-6 space-y-2'>
-            {content.roadmap[language].map((item, idx) => (
-              <li key={idx}>{item}</li>
-            ))}
-          </ul>
-        </section>
+      {/* Fluxo de Uso */}
+      <section className='space-y-4 animate-in fade-in slide-in-from-left-4 duration-700 delay-700'>
+        <h2 className='text-2xl font-semibold'>
+          {language === 'pt' ? 'Fluxo de Uso' : 'Usage Flow'}
+        </h2>
+        <ol className='list-decimal pl-6 space-y-2 text-muted-foreground'>
+          {content.usageFlow[language].map((step, idx) => (
+            <li key={idx} className='transition-colors hover:text-foreground'>
+              {step}
+            </li>
+          ))}
+        </ol>
+      </section>
 
-        {/* CTA */}
-        <section className='text-center'>
-          <p className='text-lg font-medium'>{content.cta[language]}</p>
-        </section>
-      </div>
-    </main>
+      {/* Roadmap */}
+      <section className='space-y-4 animate-in fade-in slide-in-from-right-4 duration-700 delay-900'>
+        <h2 className='text-2xl font-semibold'>
+          {language === 'pt' ? 'Próximas Funcionalidades' : 'Upcoming Features'}
+        </h2>
+        <ul className='list-disc pl-6 space-y-2'>
+          {content.roadmap[language].map((item, idx) => (
+            <li key={idx}>{item}</li>
+          ))}
+        </ul>
+      </section>
+
+      {/* CTA */}
+      <section className='text-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-1100'>
+        <p className='text-lg font-medium'>{content.cta[language]}</p>
+      </section>
+    </div>
   );
 }

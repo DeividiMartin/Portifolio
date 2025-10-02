@@ -1,4 +1,4 @@
-// app/layout.tsx
+import type React from 'react';
 import type { Metadata } from 'next';
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
@@ -11,11 +11,11 @@ import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { LanguageToggle } from '@/components/ui/language-toggle';
 import Link from 'next/link';
 import { Footer } from '@/components/portfolio/footer';
+import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
   title: 'Deividi Martin - Desenvolvedor Backend',
-  description:
-    'Portfólio profissional de Deividi Martin, desenvolvedor backend especializado em Java e Spring Boot',
+  description: 'Portfólio profissional de Deividi Martin',
   generator: 'v0.app',
 };
 
@@ -36,30 +36,42 @@ export default function RootLayout({
           disableTransitionOnChange={false}
         >
           <LanguageProvider>
-            <Suspense>
-              {/* HEADER FIXO */}
-              <header className='fixed top-0 left-0 w-full z-40 bg-background/80 backdrop-blur-sm border-b border-border shadow-sm'>
-                <div className='max-w-5xl mx-auto flex items-center justify-between px-6 py-4'>
-                  <Link href='/'>
-                    <button className='px-4 py-2 text-white rounded hover:bg-primary-dark transition'>
-                      Início
-                    </button>
-                  </Link>
-                  <div className='flex items-center gap-3'>
-                    <ThemeToggle />
-                    <LanguageToggle />
+            {/* HEADER FIXO */}
+            <header className='fixed top-0 left-0 w-full z-40 bg-background/95 backdrop-blur-md border-b border-border/50 shadow-sm transition-all duration-300'>
+              <div className='max-w-5xl mx-auto flex items-center justify-between px-6 py-3'>
+                <Link href='/' className='transition-transform hover:scale-105'>
+                  <Button
+                    variant='outline'
+                    size='sm'
+                    className='flex items-center gap-2 bg-transparent transition-all duration-200 hover:bg-accent'
+                  >
+                    Inicio
+                  </Button>
+                </Link>
+                <div className='flex items-center gap-3'>
+                  <ThemeToggle />
+                  <LanguageToggle />
+                </div>
+              </div>
+            </header>
+
+            {/* CONTEÚDO DINÂMICO */}
+            <Suspense
+              fallback={
+                <div className='flex-1 flex items-center justify-center'>
+                  <div className='animate-pulse text-muted-foreground'>
+                    Carregando...
                   </div>
                 </div>
-              </header>
-
-              {/* CONTEÚDO DINÂMICO */}
-              <main className='flex-1 px-6 pt-28 max-w-5xl mx-auto w-full'>
+              }
+            >
+              <main className='flex-1 px-6 pt-24 pb-12 max-w-5xl mx-auto w-full animate-in fade-in duration-300'>
                 {children}
               </main>
-
-              <Footer />
-              <Analytics />
             </Suspense>
+
+            <Footer />
+            <Analytics />
           </LanguageProvider>
         </ThemeProvider>
       </body>
