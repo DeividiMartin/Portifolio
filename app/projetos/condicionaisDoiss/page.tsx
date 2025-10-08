@@ -1,193 +1,181 @@
 'use client';
 import { useLanguage } from '@/contexts/language-context';
-import { ImageZoom } from '@/components/ui/image-zoom';
+import { ImageCarousel } from '@/components/ui/image-carousel';
+import { Button } from '@/components/ui/button';
 import {
   CheckCircle2,
   Code2,
   Database,
   Layers,
-  Rocket,
   Zap,
   Link2,
   ShieldCheck,
+  Users,
+  Mail,
+  Linkedin,
+  Target,
+  Lightbulb,
+  Cog,
 } from 'lucide-react';
 
 export default function CondicionalProjectPage() {
   const { language } = useLanguage();
 
   const content = {
-    title: {
-      pt: 'Sistema de Gerenciamento de Vendas Condicionais',
-      en: 'Conditional Sales Management System',
-    },
-    subtitle: {
-      pt: 'Doiss Auto Peças',
-      en: 'Doiss Auto Parts',
-    },
-    overview: {
-      pt: 'Sistema desktop completo e robusto desenvolvido para um CDV (Centro de Desmonte Veicular), criado para substituir controles de vendas condicionais feitos manualmente e proporcionar um gerenciamento mais eficiente das contas dos clientes. Solução local com integrações avançadas que sincroniza automaticamente com sistemas externos (ERP e Mercado Livre), garantindo controle total de estoque e anúncios em tempo real, sem dependência de conexão constante com internet.',
-      en: 'Complete and robust desktop system developed for a CDV (Vehicle Dismantling Center), designed to replace manually handled conditional sales controls and provide more efficient management of customer accounts. Local solution with advanced integrations that automatically syncs with external systems (ERP and Mercado Livre), ensuring full stock and listing control in real-time, without constant internet connection dependency.',
+    hero: {
+      title: {
+        pt: 'Sistema de Gerenciamento de Vendas Condicionais',
+        en: 'Conditional Sales Management System',
+      },
+      subtitle: {
+        pt: 'Doiss Auto Peças',
+        en: 'Doiss Auto Parts',
+      },
+      tagline: {
+        pt: 'Transformando operações manuais em um sistema profissional e automatizado',
+        en: 'Transforming manual operations into a professional and automated system',
+      },
+      overview: {
+        pt: 'Sistema desktop completo desenvolvido para um Centro de Desmonte Veicular, substituindo controles manuais por uma solução profissional com integrações automáticas que sincroniza com ERP e Mercado Livre em tempo real.',
+        en: 'Complete desktop system developed for a Vehicle Dismantling Center, replacing manual controls with a professional solution featuring automatic integrations that sync with ERP and Mercado Livre in real-time.',
+      },
+      cta: {
+        pt: 'Precisa de um sistema personalizado?',
+        en: 'Need a custom system?',
+      },
     },
 
     problem: {
       title: {
-        pt: 'Problema Resolvido',
-        en: 'Problem Solved',
+        pt: 'O Desafio',
+        en: 'The Challenge',
       },
       description: {
-        pt: 'Digitalizou e otimizou o processo de vendas condicionais que anteriormente era feito manualmente, eliminando problemas como dificuldade em rastrear pagamentos, falta de histórico, impossibilidade de gerar relatórios e risco de perda de informações. Além disso, automatizou a integração com sistemas externos, eliminando a necessidade de pausar anúncios do Mercado Livre e atualizar estoque manualmente no sistema ERP após cada venda, conferindo ao CDV um tom mais profissional, organizado e confiável diante dos clientes.',
-        en: 'Digitized and optimized the conditional sales process that was previously handled manually, eliminating issues such as difficulty tracking payments, lack of history, inability to generate reports, and risk of information loss. Additionally, it automated integration with external systems, eliminating the need to manually pause Mercado Livre listings and update stock in the ERP system after each sale, giving the CDV a more professional, organized, and reliable image in front of its customers.',
+        pt: 'A empresa enfrentava dificuldades com controles manuais de vendas condicionais: impossibilidade de rastrear pagamentos, falta de histórico organizado, risco de perda de informações e trabalho manual intensivo para atualizar estoque e pausar anúncios após cada venda.',
+        en: 'The company faced difficulties with manual conditional sales controls: inability to track payments, lack of organized history, risk of information loss, and intensive manual work to update stock and pause listings after each sale.',
+      },
+      solution: {
+        pt: 'A Solução',
+        en: 'The Solution',
+      },
+      solutionDescription: {
+        pt: 'Sistema desktop completo que digitalizou todo o processo, automatizou integrações com sistemas externos (ERP e Mercado Livre), eliminou erros de cálculo e proporcionou uma imagem mais profissional e confiável para os clientes.',
+        en: 'Complete desktop system that digitized the entire process, automated integrations with external systems (ERP and Mercado Livre), eliminated calculation errors, and provided a more professional and reliable image to clients.',
       },
     },
+
     features: [
       {
-        icon: 'users',
+        icon: Users,
         title: {
           pt: 'Gestão Completa de Clientes',
           en: 'Complete Client Management',
         },
+        description: {
+          pt: 'Cadastro inteligente com validação automática de CPF/CNPJ e preenchimento de endereço via CEP',
+          en: 'Smart registration with automatic CPF/CNPJ validation and address filling via ZIP code',
+        },
         items: {
           pt: [
-            'Cadastro com informações detalhadas e endereço completo',
             'Validação automática de CPF/CNPJ com formatação inteligente',
-            'Integração com API ViaCEP para preenchimento automático de endereço',
-            'Histórico completo de vendas por cliente',
-            'Filtros avançados por período',
-            'Modal detalhado com todas as transações',
-            'Busca e ordenação inteligente',
+            'Integração com API ViaCEP para preenchimento automático',
+            'Histórico completo de vendas e pagamentos por cliente',
+            'Filtros avançados e busca inteligente',
           ],
           en: [
-            'Registration with detailed information and complete address',
             'Automatic CPF/CNPJ validation with smart formatting',
-            'ViaCEP API integration for automatic address filling',
-            'Complete sales history per client',
-            'Advanced period filters',
-            'Detailed modal with all transactions',
-            'Smart search and sorting',
+            'ViaCEP API integration for automatic filling',
+            'Complete sales and payment history per client',
+            'Advanced filters and smart search',
           ],
         },
       },
       {
-        icon: 'shopping-cart',
+        icon: ShieldCheck,
         title: {
           pt: 'Sistema de Vendas Condicionais',
           en: 'Conditional Sales System',
         },
+        description: {
+          pt: 'Criação rápida de vendas com busca automática de produtos e cálculos precisos',
+          en: 'Quick sales creation with automatic product search and precise calculations',
+        },
         items: {
           pt: [
-            'Criação de vendas com múltiplos itens',
             'Busca automática de produtos por SKU via API ERP',
             'Preenchimento automático de dados do produto',
-            'Campos detalhados por produto com validação numérica',
-            'Cálculo automático de totais',
-            'Suporte para vendas parcialmente pagas',
-            'Três formas de pagamento: PIX, Cartão e Dinheiro',
+            'Cálculo automático de totais e validações',
+            'Suporte para múltiplas formas de pagamento',
           ],
           en: [
-            'Sales creation with multiple items',
             'Automatic product search by SKU via ERP API',
             'Automatic product data filling',
-            'Detailed fields per product with numeric validation',
-            'Automatic total calculation',
-            'Support for partially paid sales',
-            'Three payment methods: PIX, Card and Cash',
+            'Automatic total calculation and validations',
+            'Support for multiple payment methods',
           ],
         },
       },
       {
-        icon: 'link',
+        icon: Link2,
         title: {
           pt: 'Integrações Automáticas',
           en: 'Automatic Integrations',
         },
+        description: {
+          pt: 'Sincronização em tempo real com sistemas externos sem intervenção manual',
+          en: 'Real-time synchronization with external systems without manual intervention',
+        },
         items: {
           pt: [
-            'Integração com API ERP para busca de produtos',
-            'Pausa automática de anúncios no Mercado Livre após venda',
-            'Atualização automática de estoque no sistema ERP',
-            'Modal de confirmação para controle de estoque',
-            'Sincronização em tempo real com sistemas externos',
-            'Cache inteligente de tokens de autenticação',
+            'Pausa automática de anúncios no Mercado Livre',
+            'Atualização automática de estoque no ERP',
+            'Cache inteligente de autenticação',
+            'Tratamento robusto de erros com retry automático',
           ],
           en: [
-            'ERP API integration for product search',
-            'Automatic pause of Mercado Livre listings after sale',
-            'Automatic stock update in ERP system',
-            'Confirmation modal for stock control',
-            'Real-time synchronization with external systems',
-            'Smart authentication token caching',
+            'Automatic pause of Mercado Livre listings',
+            'Automatic stock update in ERP',
+            'Smart authentication caching',
+            'Robust error handling with automatic retry',
           ],
         },
       },
       {
-        icon: 'zap',
+        icon: Zap,
         title: {
-          pt: 'Vendas no Balcão (Express)',
-          en: 'Counter Sales (Express)',
+          pt: 'Vendas Express no Balcão',
+          en: 'Express Counter Sales',
+        },
+        description: {
+          pt: 'Processo otimizado que reduz vendas de 5+ cliques para apenas 2 cliques',
+          en: 'Optimized process that reduces sales from 5+ clicks to just 2 clicks',
         },
         items: {
           pt: [
             'Modal simplificado para vendas rápidas',
             'Cliente pré-selecionado automaticamente',
-            'Busca de produtos integrada com API externa',
-            'Reduz processo de 5+ cliques para 2 cliques',
+            'Integração com busca de produtos',
+            'Confirmação e impressão instantânea',
           ],
           en: [
             'Simplified modal for quick sales',
             'Automatically pre-selected client',
-            'Product search integrated with external API',
-            'Reduces process from 5+ clicks to 2 clicks',
-          ],
-        },
-      },
-      {
-        icon: 'chart',
-        title: {
-          pt: 'Dashboard Analítico',
-          en: 'Analytical Dashboard',
-        },
-        items: {
-          pt: [
-            'Resumo financeiro em tempo real',
-            'Vendas recentes com status',
-            'Top 5 clientes com maior débito',
-            'Ações rápidas integradas',
-            'Atualização automática dos dados',
-          ],
-          en: [
-            'Real-time financial summary',
-            'Recent sales with status',
-            'Top 5 clients with highest debt',
-            'Integrated quick actions',
-            'Automatic data update',
-          ],
-        },
-      },
-      {
-        icon: 'shield',
-        title: {
-          pt: 'Validações e Segurança',
-          en: 'Validations and Security',
-        },
-        items: {
-          pt: [
-            'Validação de CPF/CNPJ com algoritmo oficial',
-            'Formatação automática de documentos',
-            'Campos numéricos com validação em tempo real',
-            'Verificação de sincronização antes de atualizações',
-            'Tratamento robusto de erros de API',
-          ],
-          en: [
-            'CPF/CNPJ validation with official algorithm',
-            'Automatic document formatting',
-            'Numeric fields with real-time validation',
-            'Synchronization check before updates',
-            'Robust API error handling',
+            'Integration with product search',
+            'Instant confirmation and printing',
           ],
         },
       },
     ],
+
     technologies: {
+      title: {
+        pt: 'Stack Tecnológica',
+        en: 'Technology Stack',
+      },
+      subtitle: {
+        pt: 'Tecnologias modernas para uma aplicação robusta e escalável',
+        en: 'Modern technologies for a robust and scalable application',
+      },
       frontend: [
         'React 18',
         'TypeScript',
@@ -199,13 +187,71 @@ export default function CondicionalProjectPage() {
       backend: ['Node.js', 'Express', 'SQLite3', 'TypeScript'],
       desktop: ['Electron 27', 'Electron Forge', 'IPC Communication'],
       integrations: [
-        'API ERP (Busca de Produtos)',
-        'API Mercado Livre (Pausa de Anúncios)',
-        'API ViaCEP (Endereços)',
+        'API ERP',
+        'API Mercado Livre',
+        'API ViaCEP',
         'REST APIs',
         'Token Authentication',
       ],
     },
+
+    process: {
+      title: {
+        pt: 'Processo de Desenvolvimento',
+        en: 'Development Process',
+      },
+      subtitle: {
+        pt: 'Metodologia ágil com foco em resultados',
+        en: 'Agile methodology focused on results',
+      },
+      steps: [
+        {
+          icon: Target,
+          title: {
+            pt: 'Análise de Requisitos',
+            en: 'Requirements Analysis',
+          },
+          description: {
+            pt: 'Levantamento detalhado das necessidades do negócio e mapeamento de processos existentes',
+            en: 'Detailed survey of business needs and mapping of existing processes',
+          },
+        },
+        {
+          icon: Lightbulb,
+          title: {
+            pt: 'Design e Arquitetura',
+            en: 'Design and Architecture',
+          },
+          description: {
+            pt: 'Planejamento da solução técnica, escolha de tecnologias e design de interface',
+            en: 'Technical solution planning, technology selection, and interface design',
+          },
+        },
+        {
+          icon: Cog,
+          title: {
+            pt: 'Desenvolvimento Iterativo',
+            en: 'Iterative Development',
+          },
+          description: {
+            pt: 'Implementação em sprints com entregas incrementais e feedback constante',
+            en: 'Implementation in sprints with incremental deliveries and constant feedback',
+          },
+        },
+        {
+          icon: CheckCircle2,
+          title: {
+            pt: 'Testes e Implantação',
+            en: 'Testing and Deployment',
+          },
+          description: {
+            pt: 'Testes rigorosos, treinamento da equipe e suporte pós-implantação',
+            en: 'Rigorous testing, team training, and post-deployment support',
+          },
+        },
+      ],
+    },
+
     challenges: [
       {
         title: {
@@ -213,8 +259,8 @@ export default function CondicionalProjectPage() {
           en: 'Complex State Synchronization',
         },
         description: {
-          pt: 'Sistema robusto mantendo sincronizados lista de clientes, histórico de vendas, filtros, modais aninhados e dados de APIs externas em tempo real.',
-          en: 'Robust system keeping synchronized client list, sales history, filters, nested modals and external API data in real-time.',
+          pt: 'Implementação de sistema robusto mantendo sincronizados lista de clientes, histórico de vendas, filtros, modais aninhados e dados de APIs externas em tempo real.',
+          en: 'Implementation of robust system keeping synchronized client list, sales history, filters, nested modals and external API data in real-time.',
         },
       },
       {
@@ -223,8 +269,8 @@ export default function CondicionalProjectPage() {
           en: 'Multi-API Integration with Electron',
         },
         description: {
-          pt: 'Implementação de comunicação IPC entre renderer e main process para requisições HTTP, contornando limitações do Electron e garantindo segurança com cache de tokens.',
-          en: 'Implementation of IPC communication between renderer and main process for HTTP requests, bypassing Electron limitations and ensuring security with token caching.',
+          pt: 'Desenvolvimento de comunicação IPC entre renderer e main process para requisições HTTP, contornando limitações do Electron e garantindo segurança.',
+          en: 'Development of IPC communication between renderer and main process for HTTP requests, bypassing Electron limitations and ensuring security.',
         },
       },
       {
@@ -233,18 +279,8 @@ export default function CondicionalProjectPage() {
           en: 'Performance with Large Volumes',
         },
         description: {
-          pt: 'Queries SQL otimizadas, memoização de componentes React, lazy loading, debounce em filtros e cache inteligente de requisições externas.',
-          en: 'Optimized SQL queries, React component memoization, lazy loading, filter debounce and smart caching of external requests.',
-        },
-      },
-      {
-        title: {
-          pt: 'Cálculos Financeiros Precisos',
-          en: 'Precise Financial Calculations',
-        },
-        description: {
-          pt: 'Lógica robusta usando centavos como unidade base, validações de consistência, prevenção de erros e sincronização com sistema externo de estoque.',
-          en: 'Robust logic using cents as base unit, consistency validations, error prevention and synchronization with external stock system.',
+          pt: 'Otimização de queries SQL, memoização de componentes React, lazy loading e cache inteligente para garantir performance mesmo com milhares de registros.',
+          en: 'SQL query optimization, React component memoization, lazy loading and smart caching to ensure performance even with thousands of records.',
         },
       },
       {
@@ -253,132 +289,155 @@ export default function CondicionalProjectPage() {
           en: 'Real-Time Data Validation',
         },
         description: {
-          pt: 'Implementação de validadores de CPF/CNPJ com algoritmo oficial, formatação automática de campos e verificação de sincronização antes de operações críticas.',
-          en: 'Implementation of CPF/CNPJ validators with official algorithm, automatic field formatting and synchronization check before critical operations.',
-        },
-      },
-      {
-        title: {
-          pt: 'Tratamento de Erros de Integração',
-          en: 'Integration Error Handling',
-        },
-        description: {
-          pt: 'Sistema robusto de tratamento de erros para APIs externas, com mensagens claras ao usuário, retry automático e fallback para operação offline.',
-          en: 'Robust error handling system for external APIs, with clear user messages, automatic retry and fallback for offline operation.',
+          pt: 'Implementação de validadores de CPF/CNPJ com algoritmo oficial, formatação automática e verificação de sincronização antes de operações críticas.',
+          en: 'Implementation of CPF/CNPJ validators with official algorithm, automatic formatting and synchronization check before critical operations.',
         },
       },
     ],
-    results: [
-      {
-        metric: '80%',
-        label: {
-          pt: 'Redução no tempo de consulta',
-          en: 'Reduction in query time',
-        },
+
+    testimonial: {
+      quote: {
+        pt: 'O sistema transformou completamente nossa operação. O que antes levava horas agora leva minutos, e nossos clientes percebem o profissionalismo.',
+        en: 'The system completely transformed our operation. What used to take hours now takes minutes, and our clients notice the professionalism.',
       },
-      {
-        metric: '100%',
-        label: {
-          pt: 'Eliminação de erros de cálculo',
-          en: 'Elimination of calculation errors',
-        },
+      author: {
+        pt: 'Proprietário, Doiss Auto Peças',
+        en: 'Owner, Doiss Auto Parts',
       },
-      {
-        metric: '90%',
-        label: {
-          pt: 'Redução em trabalho manual',
-          en: 'Reduction in manual work',
-        },
-      },
-      {
-        metric: 'Offline',
-        label: {
-          pt: 'Funciona sem internet',
-          en: 'Works without internet',
-        },
-      },
-    ],
+    },
+
     screenshots: {
       title: {
-        pt: 'Funcionalidades em Ação',
-        en: 'Features in Action',
+        pt: 'Interface do Sistema',
+        en: 'System Interface',
       },
       description: {
-        pt: 'Capturas de tela das principais funcionalidades do sistema',
-        en: 'Screenshots of the main system features',
+        pt: 'Design profissional e intuitivo focado em produtividade',
+        en: 'Professional and intuitive design focused on productivity',
       },
     },
   };
 
+  const carouselImages = [
+    {
+      src: '/images/condicionais-dashboard.png',
+      alt: 'Dashboard Principal do Sistema',
+      title: language === 'pt' ? 'Dashboard Principal' : 'Main Dashboard',
+    },
+    {
+      src: '/images/condicionais-clientes.png',
+      alt: 'Tela de Gestão de Clientes',
+      title: language === 'pt' ? 'Gestão de Clientes' : 'Client Management',
+    },
+    {
+      src: '/images/condicionais-cliente-status.png',
+      alt: 'Detalhes e Status do Cliente',
+      title: language === 'pt' ? 'Detalhes do Cliente' : 'Client Details',
+    },
+    {
+      src: '/images/condicionais-venda.png',
+      alt: 'Tela de Criação de Vendas',
+      title: language === 'pt' ? 'Criação de Vendas' : 'Sales Creation',
+    },
+    {
+      src: '/images/condicionais-controle.png',
+      alt: 'Tela de Controle de Vendas',
+      title: language === 'pt' ? 'Controle de Vendas' : 'Sales Control',
+    },
+  ];
+
   return (
-    <div className='space-y-16 animate-in fade-in slide-in-from-bottom-4 duration-500'>
-      <section className='text-center space-y-6 py-12 animate-in fade-in slide-in-from-top-4 duration-700'>
-        <h1 className='text-5xl md:text-7xl font-bold text-balance bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent'>
-          {content.title[language]}
+    <div className='space-y-20 pb-20'>
+      {/* Hero Section */}
+      <section className='text-center space-y-8 py-16 animate-in fade-in slide-in-from-bottom-4 duration-700'>
+        <h1 className='text-5xl md:text-7xl font-bold text-balance leading-tight'>
+          {content.hero.title[language]}
         </h1>
+
         <p className='text-2xl font-semibold text-primary'>
-          {content.subtitle[language]}
+          {content.hero.subtitle[language]}
         </p>
-        <p className='text-lg text-muted-foreground text-pretty max-w-3xl mx-auto leading-relaxed'>
-          {content.overview[language]}
+
+        <p className='text-xl text-muted-foreground italic max-w-2xl mx-auto'>
+          {content.hero.tagline[language]}
+        </p>
+
+        <p className='text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed'>
+          {content.hero.overview[language]}
         </p>
       </section>
 
-      <section className='bg-card border border-border rounded-2xl p-8 shadow-lg animate-in fade-in slide-in-from-left-4 duration-700 delay-200'>
-        <div className='flex items-start gap-4'>
-          <div className='p-3 rounded-xl bg-primary/10 text-primary'>
-            <Rocket className='w-6 h-6' />
-          </div>
-          <div className='space-y-3 flex-1'>
+      {/* Problem & Solution Section */}
+      <section className='grid md:grid-cols-2 gap-8'>
+        <div className='bg-card border border-border rounded-2xl p-8 space-y-4 hover:shadow-lg transition-shadow duration-300'>
+          <div className='flex items-center gap-3'>
+            <div className='p-3 rounded-xl bg-destructive/10 text-destructive'>
+              <Target className='w-6 h-6' />
+            </div>
             <h2 className='text-2xl font-bold'>
               {content.problem.title[language]}
             </h2>
-            <p className='text-muted-foreground leading-relaxed'>
-              {content.problem.description[language]}
-            </p>
           </div>
+          <p className='text-muted-foreground leading-relaxed'>
+            {content.problem.description[language]}
+          </p>
+        </div>
+
+        <div className='bg-card border border-border rounded-2xl p-8 space-y-4 hover:shadow-lg transition-shadow duration-300'>
+          <div className='flex items-center gap-3'>
+            <div className='p-3 rounded-xl bg-primary/10 text-primary'>
+              <Lightbulb className='w-6 h-6' />
+            </div>
+            <h2 className='text-2xl font-bold'>
+              {content.problem.solution[language]}
+            </h2>
+          </div>
+          <p className='text-muted-foreground leading-relaxed'>
+            {content.problem.solutionDescription[language]}
+          </p>
         </div>
       </section>
 
-      <section className='space-y-8 animate-in fade-in slide-in-from-right-4 duration-700 delay-300'>
+      {/* Features Section */}
+      <section className='space-y-8'>
         <div className='text-center space-y-3'>
-          <h2 className='text-3xl font-bold'>
-            {language === 'pt' ? 'Funcionalidades Principais' : 'Main Features'}
+          <h2 className='text-4xl font-bold'>
+            {language === 'pt' ? 'Funcionalidades Principais' : 'Key Features'}
           </h2>
-          <p className='text-muted-foreground'>
+          <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
             {language === 'pt'
-              ? 'Sistema completo com recursos avançados e integrações automáticas'
-              : 'Complete system with advanced features and automatic integrations'}
+              ? 'Recursos desenvolvidos para maximizar eficiência e produtividade'
+              : 'Features developed to maximize efficiency and productivity'}
           </p>
         </div>
+
         <div className='grid md:grid-cols-2 gap-6'>
           {content.features.map((feature, idx) => (
             <div
               key={idx}
-              className='bg-card border border-border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:border-primary/50 space-y-4'
+              className='bg-card border border-border rounded-2xl p-8 space-y-6 hover:shadow-lg transition-all duration-300 hover:border-primary/50'
             >
-              <div className='flex items-center gap-3'>
-                <div className='p-2 rounded-lg bg-primary/10 text-primary'>
-                  {feature.icon === 'link' ? (
-                    <Link2 className='w-5 h-5' />
-                  ) : feature.icon === 'shield' ? (
-                    <ShieldCheck className='w-5 h-5' />
-                  ) : (
-                    <Zap className='w-5 h-5' />
-                  )}
+              <div className='flex items-start gap-4'>
+                <div className='p-3 rounded-xl bg-primary/10 text-primary flex-shrink-0'>
+                  <feature.icon className='w-6 h-6' />
                 </div>
-                <h3 className='text-xl font-semibold'>
-                  {feature.title[language]}
-                </h3>
+                <div className='space-y-2 flex-1'>
+                  <h3 className='text-xl font-semibold'>
+                    {feature.title[language]}
+                  </h3>
+                  <p className='text-sm text-muted-foreground'>
+                    {feature.description[language]}
+                  </p>
+                </div>
               </div>
-              <ul className='space-y-2'>
+
+              <ul className='space-y-3 pl-1'>
                 {feature.items[language].map((item, itemIdx) => (
-                  <li
-                    key={itemIdx}
-                    className='flex items-start gap-2 text-muted-foreground'
-                  >
-                    <CheckCircle2 className='w-4 h-4 mt-1 text-primary flex-shrink-0' />
-                    <span className='text-sm'>{item}</span>
+                  <li key={itemIdx} className='flex items-start gap-3'>
+                    <CheckCircle2 className='w-5 h-5 mt-0.5 text-primary flex-shrink-0' />
+                    <span className='text-sm text-muted-foreground'>
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -387,22 +446,54 @@ export default function CondicionalProjectPage() {
         </div>
       </section>
 
-      <section className='space-y-8 animate-in fade-in slide-in-from-left-4 duration-700 delay-400'>
+      {/* Process Section */}
+      <section className='space-y-8'>
         <div className='text-center space-y-3'>
-          <h2 className='text-3xl font-bold'>
-            {language === 'pt' ? 'Stack Tecnológica' : 'Technology Stack'}
+          <h2 className='text-4xl font-bold'>
+            {content.process.title[language]}
           </h2>
-          <p className='text-muted-foreground'>
-            {language === 'pt'
-              ? 'Tecnologias modernas e integrações avançadas para uma aplicação robusta'
-              : 'Modern technologies and advanced integrations for a robust application'}
+          <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
+            {content.process.subtitle[language]}
           </p>
         </div>
+
+        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
+          {content.process.steps.map((step, idx) => (
+            <div
+              key={idx}
+              className='relative bg-card border border-border rounded-2xl p-6 space-y-4 hover:shadow-lg transition-all duration-300'
+            >
+              <div className='absolute -top-3 -left-3 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm'>
+                {idx + 1}
+              </div>
+              <div className='p-3 rounded-xl bg-primary/10 text-primary w-fit'>
+                <step.icon className='w-6 h-6' />
+              </div>
+              <h3 className='font-semibold text-lg'>{step.title[language]}</h3>
+              <p className='text-sm text-muted-foreground leading-relaxed'>
+                {step.description[language]}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Technologies Section */}
+      <section className='space-y-8'>
+        <div className='text-center space-y-3'>
+          <h2 className='text-4xl font-bold'>
+            {content.technologies.title[language]}
+          </h2>
+          <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
+            {content.technologies.subtitle[language]}
+          </p>
+        </div>
+
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
           <div className='space-y-4'>
-            <div className='flex items-center gap-2 text-primary'>
+            <div className='flex items-center gap-3 text-primary'>
               <Layers className='w-5 h-5' />
-              <h3 className='font-semibold'>Frontend</h3>
+              <h3 className='font-semibold text-lg'>Frontend</h3>
             </div>
             <div className='flex flex-wrap gap-2'>
               {content.technologies.frontend.map((tech, idx) => (
@@ -415,10 +506,11 @@ export default function CondicionalProjectPage() {
               ))}
             </div>
           </div>
+
           <div className='space-y-4'>
-            <div className='flex items-center gap-2 text-primary'>
+            <div className='flex items-center gap-3 text-primary'>
               <Database className='w-5 h-5' />
-              <h3 className='font-semibold'>Backend</h3>
+              <h3 className='font-semibold text-lg'>Backend</h3>
             </div>
             <div className='flex flex-wrap gap-2'>
               {content.technologies.backend.map((tech, idx) => (
@@ -431,10 +523,11 @@ export default function CondicionalProjectPage() {
               ))}
             </div>
           </div>
+
           <div className='space-y-4'>
-            <div className='flex items-center gap-2 text-primary'>
+            <div className='flex items-center gap-3 text-primary'>
               <Code2 className='w-5 h-5' />
-              <h3 className='font-semibold'>Desktop</h3>
+              <h3 className='font-semibold text-lg'>Desktop</h3>
             </div>
             <div className='flex flex-wrap gap-2'>
               {content.technologies.desktop.map((tech, idx) => (
@@ -447,10 +540,11 @@ export default function CondicionalProjectPage() {
               ))}
             </div>
           </div>
+
           <div className='space-y-4'>
-            <div className='flex items-center gap-2 text-primary'>
+            <div className='flex items-center gap-3 text-primary'>
               <Link2 className='w-5 h-5' />
-              <h3 className='font-semibold'>
+              <h3 className='font-semibold text-lg'>
                 {language === 'pt' ? 'Integrações' : 'Integrations'}
               </h3>
             </div>
@@ -468,26 +562,28 @@ export default function CondicionalProjectPage() {
         </div>
       </section>
 
-      <section className='space-y-8 animate-in fade-in slide-in-from-right-4 duration-700 delay-500'>
+      {/* Technical Challenges Section */}
+      <section className='space-y-8'>
         <div className='text-center space-y-3'>
-          <h2 className='text-3xl font-bold'>
+          <h2 className='text-4xl font-bold'>
             {language === 'pt'
               ? 'Desafios Técnicos Superados'
               : 'Technical Challenges Overcome'}
           </h2>
-          <p className='text-muted-foreground'>
+          <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
             {language === 'pt'
-              ? 'Soluções implementadas para problemas complexos de integração e performance'
-              : 'Solutions implemented for complex integration and performance problems'}
+              ? 'Soluções criativas para problemas complexos'
+              : 'Creative solutions to complex problems'}
           </p>
         </div>
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+
+        <div className='grid md:grid-cols-2 gap-6'>
           {content.challenges.map((challenge, idx) => (
             <div
               key={idx}
-              className='bg-gradient-to-br from-card to-card/50 border border-border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300'
+              className='bg-gradient-to-br from-card to-card/50 border border-border rounded-2xl p-6 space-y-3 hover:shadow-lg transition-all duration-300'
             >
-              <h3 className='text-lg font-semibold mb-3'>
+              <h3 className='text-lg font-semibold'>
                 {challenge.title[language]}
               </h3>
               <p className='text-sm text-muted-foreground leading-relaxed'>
@@ -498,53 +594,34 @@ export default function CondicionalProjectPage() {
         </div>
       </section>
 
-      <section className='space-y-8 animate-in fade-in slide-in-from-left-4 duration-700 delay-700'>
+      {/* Testimonial Section */}
+      <section className='bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 rounded-3xl p-12'>
+        <div className='max-w-3xl mx-auto text-center space-y-6'>
+          <div className='text-6xl text-primary/20'>"</div>
+          <p className='text-xl md:text-2xl font-medium leading-relaxed italic'>
+            {content.testimonial.quote[language]}
+          </p>
+          <div className='pt-4'>
+            <p className='font-semibold'>
+              {content.testimonial.author[language]}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Screenshots Section */}
+      <section className='space-y-8'>
         <div className='text-center space-y-3'>
-          <h2 className='text-3xl font-bold'>
+          <h2 className='text-4xl font-bold'>
             {content.screenshots.title[language]}
           </h2>
-          <p className='text-muted-foreground'>
+          <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
             {content.screenshots.description[language]}
           </p>
         </div>
-        <div className='space-y-8'>
-          <ImageZoom
-            src='/images/condicionais-dashboard.png'
-            alt='Dashboard Principal do Sistema'
-            title={language === 'pt' ? 'Dashboard Principal' : 'Main Dashboard'}
-          />
 
-          <div className='grid md:grid-cols-2 gap-6'>
-            <ImageZoom
-              src='/images/condicionais-clientes.png'
-              alt='Tela de Gestão de Clientes'
-              title={
-                language === 'pt' ? 'Gestão de Clientes' : 'Client Management'
-              }
-            />
-
-            <ImageZoom
-              src='/images/condicionais-cliente-status.png'
-              alt='Detalhes e Status do Cliente'
-              title={
-                language === 'pt' ? 'Detalhes do Cliente' : 'Client Details'
-              }
-            />
-          </div>
-
-          <div className='grid md:grid-cols-2 gap-6'>
-            <ImageZoom
-              src='/images/condicionais-venda.png'
-              alt='Tela de Criação de Vendas'
-              title={language === 'pt' ? 'Criação de Vendas' : 'Sales Creation'}
-            />
-
-            <ImageZoom
-              src='/images/condicionais-controle.png'
-              alt='Tela de Controle de Vendas'
-              title={language === 'pt' ? 'Controle de Vendas' : 'Sales Control'}
-            />
-          </div>
+        <div className='max-w-5xl mx-auto'>
+          <ImageCarousel images={carouselImages} />
         </div>
       </section>
     </div>
