@@ -59,8 +59,7 @@ const translations = {
     'courses.certificate': 'Certificado',
 
     // Footer
-    'footer.copyright':
-      '© 2025 Deividi Martin. Desenvolvido com Next.js e Tailwind CSS.',
+    'footer.copyright': '© 2025 Deividi Martin. Todos os direitos reservados.',
 
     // Theme toggle
     'theme.light': 'Modo Claro',
@@ -114,8 +113,7 @@ const translations = {
     'courses.certificate': 'Certificate',
 
     // Footer
-    'footer.copyright':
-      '© 2025 Deividi Martin. Built with Next.js and Tailwind CSS.',
+    'footer.copyright': '© 2025 Deividi Martin. All rights reserved.',
 
     // Theme toggle
     'theme.light': 'Light Mode',
@@ -123,7 +121,7 @@ const translations = {
     'theme.toggle': 'Toggle Theme',
 
     // Language toggle
-    'language.portuguese': 'Portuguese',
+    'language.portuguese': 'Português',
     'language.english': 'English',
   },
 };

@@ -36,24 +36,24 @@ export const projects = [
   {
     id: 'E-commerce',
     title: {
-      pt: 'E-commerce (Contribuição Pessoal)',
-      en: 'E-commerce (Personal Contribution)',
+      pt: 'E-commerce Dois S Auto Peças',
+      en: 'Dois S Auto Parts E-commerce',
     },
     description: {
-      pt: 'Desenvolvi páginas do e-commerce de um CDV usando React, TypeScript e Tailwind CSS, incluindo login, cadastro, listagem de produtos e footer. Integrei APIs de frete e CEP, e dei suporte no backend com Node.js, Prisma e PostgreSQL, além de configurar o ambiente com Docker.',
-      en: 'Developed e-commerce pages for a CDV using React, TypeScript, and Tailwind CSS, including login, registration, product listing, and footer. Integrated shipping and CEP APIs, and provided backend support using Node.js, Prisma, and PostgreSQL, as well as setting up the environment with Docker.',
+      pt: 'Plataforma de e-commerce completa para auto peças com integração de frete, pagamentos, autenticação e gestão de pedidos. Desenvolvi funcionalidades críticas incluindo sistema de frete, validação de CEP e páginas de autenticação.',
+      en: 'Complete e-commerce platform for auto parts with freight integration, payments, authentication, and order management. I developed critical functionalities including freight system, ZIP code validation, and authentication pages.',
     },
     tech: [
-      'React',
+      'Next.js 15',
+      'React 19',
       'TypeScript',
       'Tailwind CSS',
-      'Node.js',
-      'Prisma',
       'PostgreSQL',
+      'Prisma',
       'Docker',
     ],
     image: '/modern-ecommerce-website-auto-parts.jpg',
-    link: 'https://doissautopecas.com.br',
+    link: '/projetos/ecommerce',
   },
   {
     id: 'stock-engine',
@@ -63,7 +63,7 @@ export const projects = [
     },
     description: {
       pt: 'Sistema desktop para CDV (Centro de Desmonte Veicular) que controla clientes, gerencia vendas em condicionais, acompanha ganhos e pagamentos, aplica filtros avançados e imprime documentos. Integrado com o sistema ERP da empresa, realizando baixa automática de estoque com autenticação segura baseada em token para garantir integridade e sincronização dos dados.',
-      en: 'Desktop system for a Vehicle Dismantling Center (VDC) that manages customers, conditional sales, revenue and payments tracking, advanced filters, and document printing. Integrated with the company’s ERP system, automatically updating inventory using secure token-based authentication to ensure data integrity and synchronization.',
+      en: "Desktop system for a Vehicle Dismantling Center (VDC) that manages customers, conditional sales, revenue and payments tracking, advanced filters, and document printing. Integrated with the company's ERP system, automatically updating inventory using secure token-based authentication to ensure data integrity and synchronization.",
     },
     tech: [
       'React 18',

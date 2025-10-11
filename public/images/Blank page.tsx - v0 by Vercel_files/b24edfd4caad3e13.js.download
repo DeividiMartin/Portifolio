@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,987761,e=>{"use strict";var t=e.i(679731),i=e.i(304649);function r({children:e,className:r}){return(0,t.jsx)("main",{className:(0,i.cn)("material-medium relative m-2 mt-0 flex-1 grow overflow-y-auto",r),children:e})}e.s(["AppCard",()=>r])}]);
